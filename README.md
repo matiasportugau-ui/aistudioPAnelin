@@ -141,11 +141,10 @@ aistudioPAnelin/
 │   └── geminiService.ts   # AI integration & business logic
 ├── vite.config.ts         # Build configuration
 ├── package.json           # Dependencies
-└── docs/
-    ├── ANALYSIS_SUMMARY.md
-    ├── MERGE_STRATEGY.md
-    ├── IMPLEMENTATION_ROADMAP.md
-    └── ARCHITECTURE.md
+├── ANALYSIS_SUMMARY.md
+├── MERGE_STRATEGY.md
+├── IMPLEMENTATION_ROADMAP.md
+└── ARCHITECTURE.md
 ```
 
 ---
