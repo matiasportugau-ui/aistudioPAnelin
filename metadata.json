@@ -1,0 +1,7 @@
+{
+  "name": "BMC Panelin Assistant Pro",
+  "description": "Asistente técnico experto de BMC Uruguay con capacidades de voz en tiempo real, análisis de reportes BOM y cotizaciones dinámicas.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
