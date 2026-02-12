@@ -23,7 +23,7 @@ Designed for Google AI Studio as the hosting platform.
 ├── App.tsx              # Main React component (sidebar + chat UI)
 ├── index.tsx            # React DOM entry point
 ├── index.html           # HTML template (Tailwind CDN, import maps for React via esm.sh)
-├── types.ts             # All TypeScript interfaces (Product, Quote, Message, etc.)
+├── types.ts             # All TypeScript interfaces (Product, QuoteParams, TechnicalData, Message, etc.)
 ├── constants.ts         # Product catalog, accessories, system instructions, company info
 ├── services/
 │   └── geminiService.ts # BMCBot class — Gemini API integration, function calling, audio
