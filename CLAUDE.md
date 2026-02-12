@@ -53,6 +53,8 @@ GEMINI_API_KEY=your_key_here
 
 The key is injected via Vite's `define` config as `process.env.API_KEY` and `process.env.GEMINI_API_KEY`.
 
+**Security note:** Because this is a purely client-side app, any API key injected into the bundle will be visible to users in the browser and cannot be kept secret. You must either (a) configure strict restrictions on the key (for example, HTTP referrer restrictions and limited quota/permissions) or (b) move the Gemini API calls behind a server-side proxy and keep the key only on the server if you require real secrecy.
+
 ## Architecture
 
 ### State Management
@@ -82,7 +84,7 @@ Key interfaces: `Product`, `Accessory`, `BOMItem`, `QuoteParams`, `TechnicalData
 
 ### Business Logic (constants.ts)
 
-- `PRODUCT_CATALOG` — 6 panel products with pricing, thermal properties, dimensions
+- `PRODUCT_CATALOG` — 7 panel products with pricing, thermal properties, dimensions
 - `ACCESSORIES_CATALOG` — 7 installation hardware items
 - `INSTITUTIONAL_INFO` — BMC Uruguay contact info, IVA rate (22%), currency (USD)
 - `SYSTEM_INSTRUCTIONS` — Detailed AI prompt defining consultancy behavior and calculation rules
